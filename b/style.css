@@ -1,0 +1,49 @@
+img {
+  width:100px;
+  height: 33px;
+  background-repeat:no-repeat;
+  background-size: stretch
+}
+
+bb {
+  text-size: 16px;
+  font-weight:none;
+}
+h1 { text-align:center }
+
+h2 {
+  text-align: center;
+  background:pink;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+lb {
+  text-size:24;
+  font-weight:bold;
+}
+
+/* https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css  */
+
+
+.cell {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  margin-left:13%;
+  text-align:center;
+  display: inline-block;
+  border: 5px solid #a66
+}
+
+.cell:nth-child(3n) {
+  background-color: white;
+}
+
+.cell:nth-child(3n)::after {
+  display: inline;
+  content: '\A';
+  white-space: pre;
+}
+
+/* lft { margin-left:23%;padding-left:23;right:33%;display:fixed; } */
